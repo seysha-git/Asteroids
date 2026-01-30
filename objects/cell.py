@@ -23,7 +23,7 @@ class Cell:
         text_rect.center = (self.x + self.width // 2, self.y + self.height // 2)
         pg.draw.rect(screen, "grey", self.rect)
         screen.blit(text_surface, text_rect)
-    #set-methods
+    #set-methodss
     def setState(self, turn):
         if turn: self.state = "X"
         else:self.state = "O"
