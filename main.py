@@ -21,7 +21,6 @@ def main():
 
         game.loop(event, screen)
         pg.display.flip()
-
         clock.tick(FPS)
 
     pg.quit()
