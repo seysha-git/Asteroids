@@ -6,11 +6,11 @@ from game import *
 
 pg.init()
 screen = pg.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-pg.display.set_caption("Tutorial")
+pg.display.set_caption("Tic Tac Toe")
 clock = pg.time.Clock()
 game = Game()
 
-#game.init()
+game.init()
 
 
 def main():
@@ -19,8 +19,7 @@ def main():
             if event.type == pg.QUIT:
                 game.end()
 
-        game.update()
-        game.draw(screen)
+        game.loop(event, screen)
         pg.display.flip()
 
         clock.tick(FPS)
