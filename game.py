@@ -22,7 +22,7 @@ class Game:
             for c in range(self.columns):
                 self.update(r, c, event)
                 self.draw(r, c, screen)
-        #change
+        #changed
     def update(self, r, c, event):
         if event.type == pg.MOUSEBUTTONDOWN:
             if event.type == 1:
